@@ -1,0 +1,222 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueve Veintitrés</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="../libs/bootstrap/js/bootstrap.min.js"> </script>
+
+    <!--Linkeo a CSS-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <!--Menú hamburguesa-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../FAVICON/FAVICON-NUEVE-VEINTITRES.png" alt="nueve-icon" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nueva Merch aquí
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hombre.html">Hombre</a></li>
+                            <li><a class="dropdown-item" href="mujer.html">Mujer</a></li>
+                            <li><a class="dropdown-item" href="mixto.html">Mixto</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success" type="submit">
+                    <div class="carrito">
+                        <a class="nav-link" href="./carrito.html"> <img src="../ASSETS/carrito.png" alt="carrito"
+                                width="20" height="20">
+                        </a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<br>
+
+<body>
+    <!--Aquí va el contenido-->
+    <div class="container">
+        <div class="row g-3">
+            <div class="col">
+                <h3 class="title">¿Quiénes somos?</h3>
+                <p>Nos da gusto que tengas interés en nosotros, somos una empresa mexicana que se dedica a la
+                    impresión de playeras con mensaje.
+                    Nos encanta ser diferentes y llevar un mensaje de salvación a quién nos lee.
+                </p>
+                <br>
+                <p><strong>Misión</strong></p>
+                <p>Ser colaboradores de Dios en la edificación de su iglesia, sirviendo en amor a todos los
+                    creyentes, poniendo a su alcance la palabra escrita y materiales de apoyo, que los motiven a
+                    llegar a la madurez y a proclamar las Buenas Nuevas al mundo, dando en todo la gloria al Señor
+                    que pronto vendrá.</p>
+                <br>
+                <p><strong>Visión</strong></p>
+                <p>Ser la mejor tienda de playeras y sudaderas cristianas en México a través de un liderazgo en
+                    producto y experiencia.</p>
+                <br>
+
+                <p><strong>Valores</strong></p>
+
+                <p>Honestidad</p>
+
+                <p>Respeto</p>
+
+                <p>Confiabilidad</p>
+
+                <p>Servicio</p>
+
+                <p>Perseverancia</p>
+
+                <p>Somos ecofriendly &#128521 </p>
+            </div>
+            <div class="col">
+                <img src="../ASSETS/Acerca-de-nosotros.jpg" alt="imagen-acerca" width="560px" height="700px">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Aquí va un formulario-->
+    <section class="section" id="contact">
+        <div class="container card text-center">
+            <br>
+            <h6 class="title">¿QUIERES SABER MÁS?</h6>
+            <hr>
+            <br>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md">
+                    <label for="validationCustom01" class="form-label">¿Cuál es tu nombre?</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                        Súper!
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <label for="validationCustom03" class="form-label">¿Cuál es tu whats?</label>
+                    <input type="number" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa un número válido.
+                    </div>
+                </div>
+                <div class="col-md">
+                    <label for="validationCustom04" class="form-label">Estado</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elige...</option>
+                        <option>Edo. Mex</option>
+                        <option>CDMX</option>
+                        <option>------</option>
+                        <option>Aguascalientes</option>
+                        <option>Baja California</option>
+                        <option>Baja California Sur</option>
+                        <option>Campeche</option>
+                        <option>Chiapas</option>
+                        <option>Chihuahua</option>
+                        <option>Coahuila</option>
+                        <option>Colima</option>
+                        <option>Durango</option>
+                        <option>Guerrero</option>
+                        <option>Guanajuato</option>
+                        <option>Hidalgo</option>
+                        <option>Jalisco</option>
+                        <option>Michoacán</option>
+                        <option>Morelos</option>
+                        <option>Nayarit</option>
+                        <option>Nuevo León</option>
+                        <option>Oaxaca</option>
+                        <option>Puebla</option>
+                        <option>Querétaro</option>
+                        <option>Quintana Roo</option>
+                        <option>San Luis Potosí</option>
+                        <option>Sinaloa</option>
+                        <option>Sonora</option>
+                        <option>Tabasco</option>
+                        <option>Tamaulipas</option>
+                        <option>Tlaxcala</option>
+                        <option>Veracruz</option>
+                        <option>Yucatán</option>
+                        <option>Zacatecas</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor selecciona un estado válido.
+                    </div>
+                </div>
+                <div>
+                    <div class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            ¿Aceptas los términos y condiciones?
+                        </label>
+                        <div class="invalid-feedback">
+                            Por favor acepta los términos y condiciones
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+            <br>
+        </div>
+        </div>
+
+
+
+        <!--Aquí inicia el footer-->
+
+        <!--Aquí inicia el footer-->
+    <br><br><br>
+    <div class="footer">
+        <div id="container">
+            <div class="col-auto">
+                <div class="row footer_copy">
+                    <div class="grid text-center">
+                        <div class="g-col-4">¿QUIERES RECIBIR OFERTAS EXCLUSIVAS? ¡SUBSCRÍBETE!</div><p></p>
+                        <div class="g-col-4">
+                            <input type="text" class="form-control" id="inputPassword2" placeholder="Ingresa tu mail">
+                        </div><p></p>
+                        <div class="g-col-4">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../libs/bootstrap/css/bootstrap.min.css"></script>
+
+</body>
+
+</html>

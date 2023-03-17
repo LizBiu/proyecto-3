@@ -1,0 +1,207 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueve Veintitrés</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="../libs/bootstrap/js/bootstrap.min.js"> </script>
+
+    <!--Linkeo a CSS-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <!--Menú hamburguesa-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../FAVICON/FAVICON-NUEVE-VEINTITRES.png" alt="nueve-icon" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nueva Merch aquí
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hombre.html">Hombre</a></li>
+                            <li><a class="dropdown-item" href="mujer.html">Mujer</a></li>
+                            <li><a class="dropdown-item" href="mixto.html">Mixto</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success" type="submit">
+                    <div class="carrito">
+                        <a class="nav-link" href="./carrito.html"> <img src="../ASSETS/carrito.png" alt="carrito"
+                                width="20" height="20">
+                        </a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<br>
+
+<body>
+    <!--Producto card-->
+    <div class="container">
+        <div class="row g-3">
+            <div class="col">
+                <img src="../ASSETS/HOMBRE/PLAYERA-HOMBRE-FAITH.jpg" alt="imagen-acerca" width="560px" height="700px">
+            </div>
+            <div class="col">
+                <h4 class="mtext-105 cl2 js-name-detail p-b-14">
+                    PLAYERA: WHAT DO YOU LIVE FOR
+                </h4>
+                <span class="PRECIO">
+                    <strong> $172.89 </strong>
+                </span>
+                <br>
+                <br>
+                <div class="size-203 flex-c-m respon6">
+                    Talla
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Elije una talla</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                    <option value="3">XL</option>
+                </select>
+                <p></p>
+                <div class="size-203 flex-c-m respon6">
+                    Color
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option>Elije un color</option>
+                    <option value="1">Amarillo</option>
+                    <option value="2">Negro</option>
+                    <option value="3">Blanco</option>
+                    <option value="4">Azul</option>
+                </select>
+                <p></p>
+                <!--Cantidad-->
+                <div class="size-203 flex-c-m respon6">
+                    Cantidad
+                </div>
+                <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+                    <i class="fs-16 zmdi zmdi-minus"></i>
+                </div>
+
+                <input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1">
+
+                <div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+                    <i class="fs-16 zmdi zmdi-plus"></i>
+                </div>
+                <br>
+                <!--Aquí van la descripción-->
+                <div class="size-203 flex-c-m respon6">
+                    <strong>Información Adicional:</strong>
+                    <p> Material:</p>
+                    <div class="desc">
+                        80% Algodón
+                    </div>
+                    <p>Están hechas de tela transpirable de alta calidad, las camisetas son súper suaves, elásticas, sin
+                        arrugas y más duraderas. Es muy cómodo de llevar en la piel. La camiseta de manga corta no se
+                        deforma
+                        ni se decolora después del lavado, se pueden lavar a máquina y a mano.</p>
+                </div>
+                <div class="size-203 flex-c-m respon6">
+                    <strong>Detalles del Producto</strong>
+                    <p> Dimensiones del producto: 38.1 x 27.94 x 1.52 cm; 141 g</p>
+                </div>
+                <br>
+                <!--Añadir a carrito-->
+                <div>
+                    <button class="btn btn-primary btn-block" type="submit">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container_center">
+        <h3>¿Buscas algo más?</h3>
+        <br>
+        <div class="row g-3">
+            <div class="col">
+                <div class="card card-body">
+                    <img src="../ASSETS/MUJER/PLAYERA-MUJER-SPOILER-GOD-WINS.jpg" class="card-img-top" alt="FAITH">
+                    <br>
+                    <h5 class="card-title">SPOILER GOD WINS</h5>
+                    <p class="TALLAS"> M L EX</p>
+                    <p class="PRECIO">$200</p>
+                    <a href="./pages/mujer.html" class="btn btn-secondary btn-block">Más información</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-body">
+                    <img src="../ASSETS/HOMBRE/PLAYERA-HOMBRE-STAND-FIRM.jpg" class="card-img-top" alt="FAITH">
+                    <br>
+                    <h5 class="card-title">STAND FIRM</h5>
+                    <p class="TALLAS">CH M L EX</p>
+                    <p class="PRECIO">$170</p>
+                    <a href="./hombre-stand-firm.html" class="btn btn-secondary btn-block">Más información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Aquí inicia el footer-->
+
+    <!--Aquí inicia el footer-->
+    <br><br><br>
+    <div class="footer">
+        <div id="container">
+            <div class="col-auto">
+                <div class="row footer_copy">
+                    <div class="grid text-center">
+                        <div class="g-col-4">¿QUIERES RECIBIR OFERTAS EXCLUSIVAS? ¡SUBSCRÍBETE!</div>
+                        <p></p>
+                        <div class="g-col-4">
+                            <input type="text" class="form-control" id="inputPassword2" placeholder="Ingresa tu mail">
+                        </div>
+                        <p></p>
+                        <div class="g-col-4">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../libs/bootstrap/js/bootstrap.min.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+<!--Fin-->>
